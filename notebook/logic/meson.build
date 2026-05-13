@@ -15,6 +15,6 @@ foreach i : range(0, all_sources.length())
     executable(
         exe_name,
         src,
-        dependencies: [dependency('fossil-io')]
+        dependencies: [dependency('fossil-io', 'fossil-sys')]
     )
 endforeach
